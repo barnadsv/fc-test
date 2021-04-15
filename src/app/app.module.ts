@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FastCommentsPageComponent } from './fast-comments-page/fast-comments-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
-
+import { FastCommentsModule } from 'ngx-fastcomments';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +14,8 @@ import { MainPageComponent } from './main-page/main-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FastCommentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
